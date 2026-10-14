@@ -1,52 +1,58 @@
-# Energy Monitoring System (Backend)
+#  Smart Energy Monitoring and AI-Based Energy Saving Advisor
 
-A robust backend system built with CodeIgniter 4 to monitor energy consumption, predict bills using Gemini AI, and provide energy-saving tips.
+An IoT-based energy monitoring system designed to track electricity consumption, predict bills, detect unusual usage patterns, and provide energy-saving recommendations for households and small businesses.
 
-## 🚀 Features
-- **Real-time Monitoring:** Collects and stores sensor data (current, voltage, temperature).
-- **AI-Powered Insights:** Uses Google Gemini AI to predict monthly electricity bills and generate personalized energy-saving tips.
-- **Firebase Integration:** Synchronizes data seamlessly with Firebase for real-time updates.
-- **RESTful API:** Provides a clean and documented API for frontend consumption.
-- **Automated Sync:** Support for cron-job based synchronization of sensor data.
+##  Features
 
-## 🛠️ Tech Stack
-- **Framework:** CodeIgniter 4
-- **Database:** MySQL
-- **AI Integration:** Google Gemini API
-- **External Services:** Firebase
-- **Language:** PHP 8.2+
+- Real-time energy monitoring using IoT sensors
+- Electricity bill estimation and prediction
+- Unusual energy usage detection
+- AI/ML-based energy-saving recommendations
+- Web dashboard and React Native mobile app
+- Firebase integration for data storage
 
-## 📂 Documentation
-- [API Documentation (Endpoints & Formats)](./API_DOCS.md)
-- [Cron Setup Guide](./CRON_SETUP.md)
+##  Tech Stack
 
-## ⚙️ Setup Instructions
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/iMuhammadAbdullahAwan/backend-code.git
-    cd backend-code
-    ```
-2.  **Install dependencies:**
-    ```bash
-    composer install
-    ```
-3.  **Configure Environment:**
-    - Copy `env` to `.env`.
-    - Set your `app.baseURL`.
-    - Configure `database.default` settings.
-    - Add your `GEMINI_API_KEY` and `FIREBASE_URL`.
-    - Set `SYNC_SECRET` for protected endpoints.
-4.  **Run Migrations:**
-    ```bash
-    php spark migrate
-    ```
-5.  **Start Development Server:**
-    ```bash
-    php spark serve
-    ```
+- **Frontend:** React Native, JavaScript
+- **Backend:** Python, Django
+- **Database:** Firebase Realtime Database, PostgreSQL
+- **IoT:** ESP32 / Raspberry Pi and compatible sensors
+- **Machine Learning:** Python-based ML libraries
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+##  Project Structure
 
-## 📄 License
-This project is licensed under the [LICENSE](./LICENSE) file.
+```text
+smart-energy-monitoring-ai/
+├── backend/
+├── mobile/
+├── docs/
+├── README.md
+└── .gitignore
+```
+
+##  Getting Started
+
+```bash
+git clone https://github.com/SiyamMukhtar/smart-energy-monitoring-ai.git
+cd smart-energy-monitoring-ai
+```
+
+Install dependencies and configure the backend, mobile app, and Firebase according to their respective folders.
+
+## 🔮 Future Improvements
+
+- Improve prediction accuracy
+- Add detailed energy usage reports
+- Enhance personalized recommendations
+- Deploy the system for real-world use
+
+##  Author
+
+**Siyam Mukhtar**
+
+- [GitHub](https://github.com/SiyamMukhtar)
+- [LinkedIn](https://www.linkedin.com/in/siyam-mukhtar-619508401)
+
+---
+
+*Final Year Project (FYP) focused on IoT-based energy monitoring and intelligent energy management.*
